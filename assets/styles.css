@@ -1,0 +1,13 @@
+.game-button {
+    position: absolute;
+    border: solid blue;
+    border-radius: 50%;
+    padding: 3px;
+    background-color: green;
+}
+
+#announcement {
+    position: fixed;
+    background-color: white;
+    text-align: center;
+}

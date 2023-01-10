@@ -1,13 +1,17 @@
+#game-board {}
+
 .game-button {
     position: absolute;
-    border: solid blue;
+    border: solid white;
     border-radius: 50%;
     padding: 3px;
-    background-color: green;
+    background-color: #eee;
 }
 
 #announcement {
-    position: fixed;
+    position: absolute;
     background-color: white;
     text-align: center;
+    left: 50%;
+    top: 50px;
 }

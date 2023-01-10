@@ -1,5 +1,6 @@
-var question = "SA";
-var size = 49;
+var question = "";
+var index = -1;
+var guesses = 0;
 const buildings = [
   "AA",
   "AB",
@@ -50,7 +51,27 @@ const buildings = [
   "UC",
   "VS",
 ];
-const game_button = document.getElementsByClassName(game - button);
+
+var game_buildings = buildings;
+const game_button = document.getElementsByClassName("game-button");
+
+game_buildings = shuffle(buildings);
+roll();
+
+function shuffle(array) {
+  let currentIndex = array.length,
+    randomIndex;
+  while (currentIndex != 0) {
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+    [array[currentIndex], array[randomIndex]] = [
+      array[randomIndex],
+      array[currentIndex],
+    ];
+  }
+
+  return array;
+}
 
 function listButtons() {
   let game_board = document.getElementById("game-board");
@@ -68,20 +89,48 @@ function listButtons() {
   }
 }
 
-function roll(size) {
-  rand = Math.random();
-  rand = Math.floor(rand * size);
-  // remove from buildings
-  question = buildings[rand];
-  console.log(buildings[rand]);
+function roll() {
+  let clickon = document.getElementById("click-on");
+  index++;
+  if (index == game_buildings.length) {
+    console.log("got to the end");
+  } else {
+    question = game_buildings[index];
+    console.log("click on " + question);
+  }
+  clickon.textContent = "Click on " + question;
 }
 
 function guess(guessed_location) {
+  let btn = document.getElementById(question);
   console.log("this is " + guessed_location);
   if (question == guessed_location) {
     console.log("yes!!");
+    switch (guesses) {
+      case 0:
+        btn.style.background = "#00ff00";
+        btn.innerText = question;
+        break;
+      case 1:
+        btn.style.background = "#f6d32d";
+        btn.innerText = question;
+        break;
+      case 2:
+        btn.style.background = "#ff9933";
+        btn.innerText = question;
+        break;
+    }
+    guesses = 0;
+    roll();
   } else {
     console.log("no :(((");
+    guesses++;
+    if (guesses >= 3) {
+      console.log("even after 3 attps you got wrong");
+      btn.style.background = "red";
+      btn.innerText = question;
+      guesses = 0;
+      roll();
+    }
   }
-  roll(size - 1);
 }

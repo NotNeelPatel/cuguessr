@@ -1,0 +1,194 @@
+[
+  {
+    "building": "Architecture Building",
+    "acronym": "AA"
+  },
+  {
+    "building": "ARISE Building",
+    "acronym": "AB"
+  },
+  {
+    "building": "Athletics",
+    "acronym": "AC"
+  },
+  {
+    "building": "Alumni Hall",
+    "acronym": "AH"
+  },
+  {
+    "building": "Azrieli Pavillion",
+    "acronym": "AP"
+  },
+  {
+    "building": "Azrieli Theatre",
+    "acronym": "AT"
+  },
+  {
+    "building": "Canal Building",
+    "acronym": "CB"
+  },
+  {
+    "building": "Colonel By Child Care Centre",
+    "acronym": "CC"
+  },
+  {
+    "building": "Residence Commons",
+    "acronym": "CO"
+  },
+  {
+    "building": "Dundas House",
+    "acronym": "DH"
+  },
+  {
+    "building": "Dunton Tower",
+    "acronym": "DT"
+  },
+  {
+    "building": "Fieldhouse",
+    "acronym": "FH"
+  },
+  {
+    "building": "Frontenac House",
+    "acronym": "FR"
+  },
+  {
+    "building": "Glengarry House",
+    "acronym": "GH"
+  },
+  {
+    "building": "Grenville House",
+    "acronym": "GR"
+  },
+  {
+    "building": "Gymnasium",
+    "acronym": "GY"
+  },
+  {
+    "building": "Human Computer Interaction Building",
+    "acronym": "HC"
+  },
+  {
+    "building": "Herzberg Laboratories",
+    "acronym": "HP"
+  },
+  {
+    "building": "Health Sciences Building",
+    "acronym": "HS"
+  },
+  {
+    "building": "Ice House",
+    "acronym": "IH"
+  },
+  {
+    "building": "Loeb Building",
+    "acronym": "LA"
+  },
+  {
+    "building": "Leeds House",
+    "acronym": "LE"
+  },
+  {
+    "building": "Lanark House",
+    "acronym": "LH"
+  },
+  {
+    "building": "Lennox and Addington House",
+    "acronym": "LX"
+  },
+  {
+    "building": "Maintenance Building",
+    "acronym": "MB"
+  },
+  {
+    "building": "Minto Centre",
+    "acronym": "MC"
+  },
+  {
+    "building": "Mackenzie Building",
+    "acronym": "ME"
+  },
+  {
+    "building": "MacOdrum Library",
+    "acronym": "ML"
+  },
+  {
+    "building": "Nesbitt Biology Building",
+    "acronym": "NB"
+  },
+  {
+    "building": "Nicol Building",
+    "acronym": "NI"
+  },
+  {
+    "building": "National Wildlife Research Centre",
+    "acronym": "NW"
+  },
+  {
+    "building": "Paterson Hall",
+    "acronym": "PA"
+  },
+  {
+    "building": "Parking Garages",
+    "acronym": "PG"
+  },
+  {
+    "building": "Prescott House",
+    "acronym": "PH"
+  },
+  {
+    "building": "Richcraft Hall",
+    "acronym": "RB"
+  },
+  {
+    "building": "Renfrew House",
+    "acronym": "RH"
+  },
+  {
+    "building": "Robertson Hall",
+    "acronym": "RO"
+  },
+  {
+    "building": "Russell House",
+    "acronym": "RU"
+  },
+  {
+    "building": "Southam Hall",
+    "acronym": "SA"
+  },
+  {
+    "building": "Steacie Building",
+    "acronym": "SC"
+  },
+  {
+    "building": "Stormont House",
+    "acronym": "SH"
+  },
+  {
+    "building": "St. Patrick's Building",
+    "acronym": "SP"
+  },
+  {
+    "building": "Social Sciences Research Building",
+    "acronym": "SR"
+  },
+  {
+    "building": "Tory Building",
+    "acronym": "TB"
+  },
+  {
+    "building": "Tennis Centre",
+    "acronym": "TC"
+  },
+  {
+    "building": "Carleton Technology and Training Centre",
+    "acronym": "TT"
+  },
+  {
+    "building": "University Centre",
+    "acronym": "UC"
+  },
+  {
+    "building": "Visualization and Simulation Building",
+    "acronym": "VS"
+  }
+]

@@ -261,6 +261,7 @@ function roll() {
 function guess(guessed_location) {
   let btn = document.getElementById(question);
   let percentTxt = document.getElementById("percentage");
+  let circle = document.getElementById("circle");
   console.log("this is " + guessed_location);
   clicks++;
   if (question == guessed_location) {
@@ -269,17 +270,20 @@ function guess(guessed_location) {
     switch (guesses) {
       case 0:
         btn.style.background = "#00ff00";
-        btn.innerText = question;
         break;
       case 1:
         btn.style.background = "#f6d32d";
-        btn.innerText = question;
         break;
       case 2:
         btn.style.background = "#ff9933";
-        btn.innerText = question;
+        break;
+      default:
+        circle.style.visibility = "hidden";
+        btn.style.background = "#fc0303";
         break;
     }
+   
+    btn.innerText = question;
     guesses = 0;
     roll();
   } else {
@@ -287,10 +291,10 @@ function guess(guessed_location) {
     guesses++;
     if (guesses >= 3) {
       console.log("even after 3 attps you got wrong");
-      btn.style.background = "red";
-      btn.innerText = question;
-      guesses = 0;
-      roll();
+      console.log(btn.offsetLeft + "," + btn.offsetTop);
+      circle.style.left = btn.offsetLeft-15+"px";
+      circle.style.top = btn.offsetTop-15+"px";
+      circle.style.visibility = "visible";
     }
   }
   percentage = Math.floor((correct / clicks) * 100);

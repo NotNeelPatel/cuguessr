@@ -8,7 +8,14 @@
     background-color: #eee;
 }
 
-
+#circle{
+    position: absolute;
+    border-radius: 50%;
+    border: solid 3px red;
+    height: 50px;
+    width: 50px;
+    visibility: hidden;
+}
 #hud {}
 
 #announcement {

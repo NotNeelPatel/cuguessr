@@ -224,7 +224,7 @@ function shuffle(array) {
 function listButtons() {
   let endscreen = document.getElementById("end-screen");
   endscreen.style.visibility = "hidden";
-  let game_board = document.getElementById("game-board");
+  let game_board = document.getElementById("button-board");
   for (let i = 0; i < buildings.length; i++) {
     let btn = document.createElement("button");
     btn.setAttribute("id", buildings[i].acronym);
@@ -260,8 +260,11 @@ function roll() {
 
 function guess(guessed_location) {
   let btn = document.getElementById(question);
+  let guessed_btn = document.getElementById(guessed_location);
   let percentTxt = document.getElementById("percentage");
   let circle = document.getElementById("circle");
+  let rect = document.getElementById("rect");
+  let rect_text = document.getElementById("rect-text")
   console.log("this is " + guessed_location);
   clicks++;
   if (question == guessed_location) {
@@ -282,12 +285,17 @@ function guess(guessed_location) {
         btn.style.background = "#fc0303";
         break;
     }
+    rect_text.style.visibility = "hidden";
    
     btn.innerText = question;
     guesses = 0;
     roll();
   } else {
     console.log("no :(((");
+    rect_text.style.left = guessed_btn.offsetLeft-5+"px";
+    rect_text.style.top = guessed_btn.offsetTop-20+"px";
+    rect_text.textContent = guessed_location
+    rect_text.style.visibility = "visible";
     guesses++;
     if (guesses >= 3) {
       console.log("even after 3 attps you got wrong");
